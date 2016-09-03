@@ -78,7 +78,7 @@ var Post = new mongoose.Schema({
 * This will automate a post onto the site.
 
 ## Milestone 3
-* Directory project2 cotains the required documents for milestone 3
+* Directory MainProject contains the required documents for milestone 3
 
 ## Final Report
 * PhantomJS: We implemented PhantomJS to do headless browser testing of our links.
