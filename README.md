@@ -58,18 +58,13 @@ var Post = new mongoose.Schema({
 * As a user, I can create an account, and immediately start posting on various threads
 
 
-## Reserach Topics
+## Additionals
 
-* (3 points) Integrate user authentication
-    * I will be using Passport for user authentication
-    * Send an email to confirm account creation, if possible
+* User authentication
+    * Passport for user authentication
     * User authentication here is important because we'd like each user to have their own unique account to know them by.
-* (3 points) Implementing PhantomJS for testing of the site
-    * I will be using PhantomJS to test the creation of forums/threads/and post
-* (2 Points) Using Mocha for unit testing (If possible)
-	* I would like to learn how to use Mocha for unit testing if time allots for it.
-* (1 Point) Using Sass as a Preprocessor
-	*I would like to use a preprocessor such as Sass in this project and learn more about it.
+* PhantomJS for testing of the site
+    * PhantomJS used to test the creation of forums/threads/and post
 
 
 ## Milestone 2
