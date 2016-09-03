@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<center>
+  <head>
+
+    <title>Gamer's Center</title>
+    
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    
+  	<h1>Gamer's Center!</h1>
+    
+  	{{#if user}}
+		<div class = 'overlay'>You're currently logged in as: <div id = 'usersName'>{{user.username}}</div></div>
+		{{else}}
+    <div class = 'overlay'>
+		<a href="/login">login</a> or 
+		<a href="/register">register</a>
+  </div>
+		{{/if}}
+    {{{body}}}
+    <div id="error-message" class="erMsg">
+        <div class="modal">
+         <p> Some inputs are missing!</p>
+         <button class="closeButton">Ok. Got it!</button>
+  </div>
+  </body>
+</center>
+</html>

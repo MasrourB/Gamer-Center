@@ -1,0 +1,15 @@
+
+<form id= "frm2" method="POST" action="">
+Find a thread by title!
+<p> Thread title: <input name = "threadTitle" type= "text" id= "field3">  </p>
+
+<input type="submit" id = "makeBtn">
+</form>
+
+{{#if passed}}
+{{#each thread}}
+<p>
+<div><a href=/threadPage/{{urlTitle}}>{{title}}</a></div>
+</p>
+{{/each}}
+{{/if}}

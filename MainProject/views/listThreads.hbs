@@ -1,0 +1,44 @@
+{{#if notPassed}}
+<script type="text/javascript" src="/javascripts/work.js"></script>
+{{/if}}
+{{#if notPassed}}
+<form id= "makeThread" method="POST" action="">
+Don't see a thread that tailors to you? Make a new one!
+<p> Title: <input name = "threadTitle" type= "text" id= "fieldX"> </p>
+
+<input type="submit" id= "makeBtn">
+</form>
+{{/if}}
+
+<div id= "threadList">
+{{#each thread}}
+{{#if title}}
+<table border="5">
+	<thread>
+		<th>User</th>
+		<th>Comment</th>
+	</thread>
+	<tbody >
+		<p>
+		<div><a href=/threadPage/{{urlTitle}}>{{title}}</a></div>
+		{{#each listOfPosts}}
+		<tr>
+			<td> {{poster}}</td>
+			<td> {{content}} </td>
+		</tr>
+		{{/each}}
+		</p>
+	</tbody>
+</table>
+{{/if}}
+{{/each}}
+</div>
+
+{{#if passed}}
+<form id= "frm" method="POST" action="">
+Make a post!
+<p> Username: <input name = "username" type= "text" id= "field1"> What's up? <input name = "contents" type = "text" id= "field2"> </p>
+
+<input type="submit" id = "btn1">
+</form>
+{{/if}}

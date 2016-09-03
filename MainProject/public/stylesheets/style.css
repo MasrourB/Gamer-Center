@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.overlay{
+  text-align: center;
+  opacity: 0.6;
+  background: blue;
+  color: white;
+  position:fixed;
+  height: 40px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+.erMsg{
+  text-align: center;
+  opacity: 0.6;
+  display:none;
+  background: #000;
+  position:fixed;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
